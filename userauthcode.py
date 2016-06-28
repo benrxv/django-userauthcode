@@ -38,8 +38,8 @@ class UserAuthCode(object):
  
         # CAVEAT: Make sure UserAuthCode cannot be used to reactivate locked
         # profiles.
-        if user.last_login != user.date_joined:
-            return False
+        # if user.last_login != user.date_joined:
+        #     return False
 
         return digest == self.digest(user, salt)
 
