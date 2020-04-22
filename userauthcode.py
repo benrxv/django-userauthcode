@@ -55,5 +55,5 @@ if __name__ == '__main__':
     uac = UserAuthCode('Put your secret here.')
     auth_code = uac.auth_code(user)
 
-    print auth_code
-    print uac.is_valid(user, auth_code)
+    print(auth_code)
+    print(uac.is_valid(user, auth_code))
